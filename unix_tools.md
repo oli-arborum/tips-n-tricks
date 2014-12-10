@@ -12,3 +12,11 @@ useful GNU/UNIX tools command lines
    ```
    awk "NR>=${FROM} && NR<=${TO}" < input_file.txt
    ```
+ 
+ * convert time in UNIX epoch to readable timestamp:
+ 
+   ```
+   date -d @1418232617
+   date -d @1418232617 +"%F %T"
+   ```
+ 

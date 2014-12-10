@@ -10,3 +10,9 @@ useful command lines for image modification
   *Note that this only removes GPS metadata from EXIF and XMP.
   GPS metadata may be present in other metadata containers inside the file!*
   
+* remove all EXIF metadata from JPEG:
+
+  ```
+  exiftool.exe -all= -overwrite_original image.jpg
+  ```
+  

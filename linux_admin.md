@@ -12,3 +12,9 @@ useful GNU/Linux command lines for system administration
    ```
    sudo sfdisk /dev/sda < sda.mpt
    ```
+
+ * save MBR to file:
+
+   ```
+   sudo dd if=/dev/sda of=sda.mbr bs=446 count=1 
+   ```

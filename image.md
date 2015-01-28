@@ -13,6 +13,6 @@ useful command lines for image modification
 * remove all EXIF metadata from JPEG:
 
   ```
-  exiftool.exe -all= -overwrite_original image.jpg
+  exiftool -all= -overwrite_original image.jpg
   ```
   

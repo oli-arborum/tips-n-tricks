@@ -61,3 +61,8 @@ useful commands and command sequences for bash scripting
    ONE_DAY_LATER=$((`date -d $DATE +%s` + 24*60*60))
    ONE_DAY_LATER=$(date -d @$ONE_DAY_LATER +%Y-%m-%d)
    ```
+
+  (or much simpler:)
+   ```
+   ONE_DAY_LATER=$(date -d "+1 day" +%Y-%m-%d)
+   ```

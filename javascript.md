@@ -22,3 +22,4 @@ JavaScript Link List (Meta Resources and Articles)
 * Closures in JavaScript: http://jibbering.com/faq/notes/closures/
 * JavaScript Closures by Example: https://howchoo.com/g/mge2mji2mtq/javascript-closures-by-example
 * JavaScript Closures 101- they're not magic: http://www.javascriptkit.com/javatutors/closures.shtml
+* **JSLint** - "The JavaScript Code Quality Tool": http://www.jslint.com/ - https://github.com/douglascrockford/JSLint

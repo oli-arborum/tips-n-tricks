@@ -66,3 +66,10 @@ useful commands and command sequences for bash scripting
    ```
    ONE_DAY_LATER=$(date -d "+1 day" +%Y-%m-%d)
    ```
+
+ * transform string to lower case (uses `tr`):
+ 
+   ```
+   STR=$(echo "$STR" | tr '[:upper:]' '[:lower:]')
+   ```
+   (see also http://stackoverflow.com/a/2264537/116662)

@@ -74,4 +74,4 @@ Restart services
 Now the printer(s) should be announced via AVAHI (Bonjour) and appear on you iDevice when opening the print dialog.
 
 For debugging you can use the GUI tool *avahi-discover* that shows all AVAHI announcements in the network
-(installable with `apt install avahi-discover').
+(installable with `apt install avahi-discover`).

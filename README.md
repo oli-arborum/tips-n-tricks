@@ -10,7 +10,7 @@ a collection of hard-to-remember command lines to do amazing things
  * [Linux Administration](https://github.com/oli-arborum/tips-n-tricks/blob/master/linux_admin.md) - useful GNU/Linux command lines for system administration
  * [Networking](https://github.com/oli-arborum/tips-n-tricks/blob/master/networking.md) - useful command lines for networking stuff (mostly for UNIX-oid systems)
  * [UNIX Tools](https://github.com/oli-arborum/tips-n-tricks/blob/master/unix_tools.md) - useful GNU/UNIX tools command lines
- * [AirPrint](https://github.com/oli-arborum/tips-n-tricks/blob/master/unix_tools.md) - set up an AirPrint server on Ubuntu with CUPS and AVAHI daemon
+ * [AirPrint](https://github.com/oli-arborum/tips-n-tricks/blob/master/airprint.md) - set up an AirPrint server on Ubuntu with CUPS and AVAHI daemon
 
 
 Link Lists and Resources for Specific Languages

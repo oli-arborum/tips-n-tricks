@@ -5,7 +5,8 @@ AirPrint Server on Ubuntu Linux with CUPS and AVAHI daemon
 
 Prerequisites
 -------------
-You have a running CUPS installation and are able to print locally.
+You have a running CUPS installation and are able to print locally. (I.e., the CUPS driver for
+your printer is working.)
 
 I tried these instructions on a Ubuntu 18.04 LTS machine with an ancient HP Color LaserJet CP1215.
 If you are using a different distribution you may need to adapt the commands.
@@ -34,6 +35,10 @@ Modify `/etc/cups/cupsd.conf` (diff shown):
     31a35,36
     >   ## needed for AirPrint support:
     >   Allow @local
+
+(Note that the last change ```Allow @local``` is inside the section ```<Location />```. In
+contrast to what is stated in the linuxwin.com article this one is based on, it is **not**
+necessary for the sections ```<Location /admin>``` and ```<Location /admin/conf>```!)
 
 Generate AVAHI Service file for shared printer
 ----------------------------------------------

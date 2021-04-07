@@ -7,6 +7,8 @@ useful audio command lines
   CopyAudio left.wav right.wav -S "FL FR" stereo.wav
   ```
   
+  (ancient tool, get it from here: https://www.csee.umbc.edu/portal/help/sound/AFsp-V2R1/)
+  
 * extract raw audio from AV container (e.g. flv, works also for AVI, MP4, M4V, ...):
 
   ```

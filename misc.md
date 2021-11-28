@@ -7,7 +7,7 @@ Use docker-compose file ``docker-compose_v3_alpine_mysql_latest.yaml`` from http
 
 Remove all containers except for ``zabbix-server``, ``zabbix-web-nginx-mysql``, ``mysql-server``, ``zabbix-agent``, ``db_data_mysql``.
 
-Specifying a profile is necessary for zabbix-agent to launch:
+Specifying a profile is necessary for ``zabbix-agent`` to launch:
 
     docker-compose --profile full up -d
 

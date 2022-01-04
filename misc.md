@@ -31,7 +31,7 @@ Mounting via SMB is done in FreeBSD with ``mount_smbfs``:
 My first mistake was to just use ``cp`` to copy the files. They now had the current time as creation timestamp, which is most probably not desired. In FreeBSD there is no --preserve option where you can specify which attributes to preserve but only a -p option to preserve all.
 So instead using ``cp`` we use ``rsync`` to preserve creation timestamps only:
 
-    rsync -rsv /mnt/myoldnas /mnt/tank/NAS_Backup
+    rsync -rtv /mnt/myoldnas /mnt/tank/NAS_Backup
 
 However, if file or folder names contain non-ASCII characters ("gelöscht"), these characters are displayed as "?" on the console and the file or folder isn't visible via SMB at all. To fix this, the ``-E`` option of ``mount_smbfs`` needs to be used:
 

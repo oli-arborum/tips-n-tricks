@@ -43,6 +43,6 @@ Now all files and directories -- also those containing non-ASCII characters -- s
 
 Using ``diff -rq`` does only compare file content, not metadata (like mtime or permissions). To compare file metadata we also can use rsync. To check the shares I use this from a Linux machine, i.e. not the NAS itself:
 
-   rsync -n -rlpt -i --delete --modify-window=1 /mnt/old_nas_share/ /mnt/new_nas_share/
+    rsync -n -rlpt -i --delete --modify-window=1 /mnt/old_nas_share/ /mnt/new_nas_share/
 
 It is important to use trailing "/" for both paths here. Regarding the options: -n is for dry-run, -i outputs one line for each file that would be copied or deleted containing also the reason (see rsync man page), --delete also reports files that exist in destination directory (new_nas_share) only, -rlpt is the same as -a (compare metadata and attributes), but ignores group, owner and special files (like devices), --modify-window=1 ignores one second difference when comparing timestamps.

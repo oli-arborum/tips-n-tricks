@@ -34,3 +34,14 @@ useful GNU/Linux command lines for system administration
    # Remove dangling volumes
    docker volume ls -qf dangling=true | xargs --no-run-if-empty docker volume rm
    ```
+
+ * prevent suspend when closing lid of notebook:
+
+   create file ```/etc/systemd/logind.conf.d/disable_sleep_when_closing_lid.conf``` with the following content:
+
+   ```
+   [Login]
+   HandleLidSwitch=ignore
+   HandleLidSwitchDocked=ignore
+   HandleLidSwitchExternalPower=ignore
+   ```
